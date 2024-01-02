@@ -15,13 +15,17 @@ function colorGridItem(category, score) {
 
 // Function to update score and color based on user input
 function updateScore(category, score) {
+    localStorage.setItem(category, score); // Save score to local storage
     colorGridItem(category, score);
 }
 
-// Initialize colors based on the default value
+// Initialize colors based on saved values or default to '3'
 document.addEventListener('DOMContentLoaded', function () {
-    updateScore('Johto', '3');
-    updateScore('Huolto', '3');
-    updateScore('Myynti', '3');
-    updateScore('Logistiikka', '3');
+    const categories = ['Johto', 'Huolto', 'Myynti', 'Logistiikka'];
+    categories.forEach(cat => {
+        let savedScore = localStorage.getItem(cat) || '3'; // Retrieve saved score or default to '3'
+        updateScore(cat, savedScore);
+        document.getElementById(`${cat}-option`).querySelector('input').value = savedScore; // Update input value
+    });
 });
+
