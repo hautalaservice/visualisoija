@@ -1,19 +1,29 @@
+/* ...existing styles... */
+
+.options-container {
+  width: 100%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-option {
+  font-weight: bold;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  padding: 10px;
+  gap: 5px; /* reduce gap between grid items */
 }
 
+/* Reduce padding for closer squares */
 .grid-item {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   border: 1px solid black;
-  margin: 10px;
 }
 
-/* Color classes */
-.deep-red { background-color: #8B0000; }
-.light-red { background-color: #F08080; }
-.grey { background-color: #808080; }
-.light-green { background-color: #90EE90; }
-.deep-green { background-color: #006400; }
+/* ...existing color classes... */
