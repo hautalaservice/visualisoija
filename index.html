@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<!-- Options Section -->
+<div class="options-container">
+    <div class="category-option" id="Johto-option">Johto: <input type="number" min="1" max="5" value="3" onchange="updateScore('Johto', this.value)"></div>
+    <div class="category-option" id="Huolto-option">Huolto: <input type="number" min="1" max="5" value="3" onchange="updateScore('Huolto', this.value)"></div>
+    <div class="category-option" id="Myynti-option">Myynti: <input type="number" min="1" max="5" value="3" onchange="updateScore('Myynti', this.value)"></div>
+    <div class="category-option" id="Logistiikka-option">Logistiikka: <input type="number" min="1" max="5" value="3" onchange="updateScore('Logistiikka', this.value)"></div>
+</div>
+
+<!-- Grid Section -->
 <div class="grid-container">
     <div class="grid-item" id="Johto">Johto</div>
     <div class="grid-item" id="Huolto">Huolto</div>
