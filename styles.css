@@ -1,5 +1,4 @@
-/* ...existing styles... */
-
+/* Options Container Style */
 .options-container {
   width: 100%;
   padding: 10px;
@@ -9,21 +8,28 @@
   justify-content: space-around;
 }
 
+/* Style for individual category options */
 .category-option {
   font-weight: bold;
 }
 
+/* Grid Container Style */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 5px; /* reduce gap between grid items */
+  gap: 5px; /* Reduce gap between grid items */
 }
 
-/* Reduce padding for closer squares */
+/* Grid Item Style */
 .grid-item {
   padding: 10px;
   text-align: center;
   border: 1px solid black;
 }
 
-/* ...existing color classes... */
+/* Color Classes for Backgrounds Based on Scores */
+.deep-red { background-color: #8B0000; } /* Deep Red for score 1 */
+.light-red { background-color: #F08080; } /* Light Red for score 2 */
+.grey { background-color: #808080; } /* Grey for score 3 */
+.light-green { background-color: #90EE90; } /* Light Green for score 4 */
+.deep-green { background-color: #006400; } /* Deep Green for score 5 */
