@@ -1,0 +1,19 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+/* Color classes */
+.deep-red { background-color: #8B0000; }
+.light-red { background-color: #F08080; }
+.grey { background-color: #808080; }
+.light-green { background-color: #90EE90; }
+.deep-green { background-color: #006400; }
